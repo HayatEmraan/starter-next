@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## node_modules
 
-## Getting Started
+এই ফোল্ডারে আমাদের Project dependencies ইনস্টল করা হয়। এটা আমাদের ম্যানুয়ালি এই ফোল্ডারটি পরিচালনা করতে হবে না; এটি NPM or Yarn দ্বারা তৈরি এবং পরিচালিত হয়।
 
-First, run the development server:
+## public
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+এখানে আমরা স্ট্যাটিক ছবি যেমন চিত্র, ফন্ট এবং অন্য যেকোন ফাইল আমরা সর্বজনীনভাবে এখানে রাখতে পারি। উদাহরণস্বরূপ, আমরা এই ফোল্ডারে আমরা আম্রাদের প্রোজেক্ট এর favicon.ico রাখতে পারব।
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## src
+আমদের প্রোজেক্ট এর কোডের অধিকাংশই এখানে থাকবে।
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## src > app
+এটা রুট ফোল্ডার "/". একটি ওয়েবসাইট প্রথবার লোড হইলে এই পেইজ টি রান হয়।
+## src > app > globals.css
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ফাইলটি আমাদের সম্পূর্ণ অ্যাপ জুড়ে প্রযোজ্য স্টাইল করতে ব্যবহৃত হয়।
+## src > app > layout.js
 
-## Learn More
+এই ফাইল টি বাধ্যতামূলক  রুট ফোল্ডার "/" "app" থাকতে হবে। এখানে কমন ডাটা রাখা হয় যা সম্পূর্ণ ওয়েবসাইট এ প্রযোজ্য।
+## src > app > page.js
 
-To learn more about Next.js, take a look at the following resources:
+এটি একটি বিশেষ ফোল্ডার যেখানে আমরা আমাদের অ্যাপের রুট এবং পৃষ্ঠা উপাদানগুলি সংজ্ঞায়িত করে৷
+## .gitignore
+গিটহাববে ফাইল সেন্ট করতে এটা কাজে আসে। কোন ফাইল গিটহাববে সেন্ট করা হবে কিনা তা এখানে লিপিবধ্য থাকে।
+## package & package-lock.json
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+এই ফাইলটিতে আমাদের প্রোজেক্ট সম্পর্কে মেটাডেটা রয়েছে এবং এটির নির্ভরতা তালিকাভুক্ত করে। এটিতে এমন স্ক্রিপ্টগুলিও রয়েছজেচ আমদের বিভিন্ন কমান্ড চালানোর অনুমতি দেয়, যেমন ডেভেলপমেন্ট সার্ভার শুরু করা বা অ্যাপ তৈরি করা।
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## next.config.js
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+এই ফাইলে Next JS  এর Configuration থাকে যেখানে Next JS  Customaization করা যায়।
